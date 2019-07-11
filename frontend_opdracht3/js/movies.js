@@ -2,9 +2,11 @@
 /*eslint-env browser*/
 /*eslint 'no-console':0*/
 
-console.log('movies.js loaded.')
+console.log('movies.js loaded.');
 
-var requestURL = "https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json"
+var articles = document.querySelector('.articles');
+
+var requestURL = "https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -12,7 +14,8 @@ request.send();
 request.onload = function () {
 	var movies = request.response;
 	setElements(movies);
-}
+
+};
 
 function setElements(jsonObject) {
 	var movies = jsonObject;
@@ -35,4 +38,6 @@ function setElements(jsonObject) {
 
 		articles.appendChild(article)
 	}
+
+	//kwak code hier of roep functie aan 
 }
