@@ -38,6 +38,4 @@ function setElements(jsonObject) {
 
 		articles.appendChild(article)
 	}
-
-	//kwak code hier of roep functie aan 
 }
