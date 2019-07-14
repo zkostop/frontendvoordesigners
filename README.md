@@ -30,10 +30,17 @@ Veel mensen vinden het makkelijk om via de pijltjes bepaalde interacties op te w
 
 
 ## [Opdracht 3](frontend_opdracht3/) :
-Voor het inladen van de JSON voor opdracht 3 heb ik zorgvuldig de tutorial gevolgd, dit ging in 1 keer goed. Om de JSON versie te laten werken met het liken en opslaan van de films heb ik een class toegevoegd aan elke individuele film met zijn eigen ID/getal. Omdat ik wist dat het 6 films waren heb ik 6 maal dezelfde functie voor elke film geschreven. 
-Wat opviel tijdens het maken was dat de teller in de nav-bar niet meer werkte. Zelfs toen ik alle code onderelkaar op volgorde ging zetten werkte dit niet. Dit had in mijn geval waarschijnlijk te maken met het feit dat de variabelen en de functies voor alle films eerder werden ingeladen dan de JSON zelf. Dit gaf een foutmelding "film x undefined", o.i.d. Ik heb dit opgelost door de code uit like.js in een time-out te stoppen, zodat het programma genoeg tijd had om de films in te laden. Het was voor mij de enige werkende oplossing. 
+Voor het inladen van de JSON voor opdracht 3 heb ik zorgvuldig de tutorial gevolgd, dit ging in 1 keer goed. Om de JSON versie te laten werken met het liken en opslaan van de films heb ik een [class](frontend_opdracht3/js/like.js) (regel 14 t/m 19) toegevoegd aan elke individuele film met zijn eigen ID/getal. Omdat ik wist dat het 6 films waren heb ik 6 maal dezelfde functie voor elke film geschreven. 
+Wat opviel tijdens het maken was dat de teller in de nav-bar niet meer werkte. Zelfs toen ik alle code onderelkaar op volgorde ging zetten werkte dit niet. Dit had in mijn geval waarschijnlijk te maken met het feit dat de variabelen en de functies voor alle films eerder werden ingeladen dan de JSON zelf. Dit gaf een foutmelding "film x undefined", o.i.d. Ik heb dit opgelost door de [code](frontend_opdracht3/js/like.js)(regel 5, 87) uit like.js in een time-out te stoppen, zodat het programma genoeg tijd had om de films in te laden. Het was voor mij de enige werkende oplossing. 
 
 ## Principes:
 
 #### 9: Appearance follows behavior
-Gebruikers willen niet graag voor verassingen staan en moeten duidelijkheid hebben van de 
+Gebruikers willen niet graag voor verassingen staan en moeten duidelijkheid hebben van de interacties die zij voor hen krijgen. Het aanklikken van een hartje zou dus zeker gepast zijn. De gebruikers verwachten namelijk dat het hartje ingekleurd zal worden en bij nog een keer aanklikken weer leeg wordt. 
+
+#### 11: Strong visual hierarchies work best
+Door de ingeladen JSON op een overzichtelijke manier in de website neer te zetten wordt het fijner voor de gebruiker om het overzicht te zien. De blokken onderelkaar zijn simpel, lijken op elkaar en de gebruiker weet wat hij zal verwachten. Het inladen ziet er overzichtelijk uit en er hoeft niet veel moeite gedaan te worden om het aan te passen. 
+
+#### keuze valt voor deze opdracht:
+De website is overzichtelijk, voldoet aan de eisen van de principes en is het fijnste om naar te kijken. De manier van vormgeving spreekt mij het meeste aan omdat het opelkaar lijkt, overzichtelijk is en lijkt op andere sites waar je een film zou bekijken.
+
